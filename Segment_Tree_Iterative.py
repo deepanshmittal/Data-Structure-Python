@@ -19,6 +19,7 @@ def right(idx):
 
 
 class SegmentTree:
+    # Build Tree
     def __init__(self, arr):
         self.size = len(arr)
         self.tree_size = 2 ** ceil(log2(self.size))
