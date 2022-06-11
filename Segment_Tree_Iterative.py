@@ -1,5 +1,6 @@
 # https://codeforces.com/contest/1108/submission/48856997
 # https://codeforces.com/blog/entry/18051
+# https://codeforces.com/blog/entry/15890
 # Very Fast with FastIO template
 from math import log2, ceil
 from sys import stdin
