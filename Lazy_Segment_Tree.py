@@ -24,6 +24,8 @@ def right(idx):
 
 
 class SegmentTree:
+    from math import ceil, log2
+    
     # Build Tree to store the sum of array in some range at each index of the tree
     def __init__(self, arr):
         self.size = len(arr)
