@@ -21,7 +21,7 @@ def right(idx):
 class SegmentTree:
     def __init__(self, arr):
         self.size = len(arr)
-        self.tree_size = 2 ** ceil(log2(self.size))
+        self.tree_size = 2 ** self.size.bit_length()
         self.tree = [0] * 2 * self.tree_size
         self.idx, self.left_node, self.right_node = [1, 0, self.size - 1]
         self.build(arr)
