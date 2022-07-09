@@ -29,7 +29,7 @@ class SegmentTree:
     # Build Tree to store the sum of array in some range at each index of the tree
     def __init__(self, arr):
         self.size = len(arr)
-        self.tree_size = 2 ** ceil(log2(self.size))
+        self.tree_size = 2 ** self.size.bit_length()
         self.tree = [0] * 2 * self.tree_size
         self.lazy = self.tree.copy()
         for idx in range(self.size):
