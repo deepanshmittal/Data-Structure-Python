@@ -23,7 +23,7 @@ class SegmentTree:
     # Build Tree
     def __init__(self, arr):
         self.size = len(arr)
-        self.tree_size = 2 ** ceil(log2(self.size))
+        self.tree_size = 2 ** self.size.bit_length()
         self.tree = [0] * 2 * self.tree_size
         for idx in range(self.size):
             self.tree[self.tree_size + idx] = arr[idx]
